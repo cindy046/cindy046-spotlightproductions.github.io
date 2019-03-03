@@ -1,307 +1,116 @@
-.sc_contact_form_title,
-.sc_contact_form_description {
-  text-align: center;
+.section1 {
+  height: 100px;
 }
-.sc_contact_form {
-  overflow: hidden;
-  padding-bottom: 4px;
-  padding-left: 1.3em;
-  /*margin-bottom: 3em;*/
+.col-sm-2 {
+  max-height: 100%;
+  max-width: 100%;
+  padding-left: 10px;
+  padding-bottom: 20px;
+  padding-top: 10px;
 }
-.sc_contact_form .result {
-  display: none;
-  margin-top: 2em;
-}
-.sc_contact_form .label_over label {
-  display: none;
-}
-.sc_contact_form .sc_contact_form_info {
-  overflow: hidden;
-}
-.sc_contact_form .sc_contact_form_item {
-  width: 100%;
+.bg {
+  background-image: url("https://sftextures.com/texture/5145/1/5153/gradient-grey-display-background-many-nine-lights-stage-floor-six-spotlight-wall-modern-soft-web-image-512x288.png");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -2;
 }
 
-.sc_contact_form_message {
-  margin-top: 2em;
-  margin-bottom: 3em;
-}
-
-.sc_contact_form_info .sc_contact_form_item input[name="username"] {
-  width: 97%;
-  float: left;
-}
-
-.sc_contact_form.sc_contact_form_standard .sc_contact_form_field {
-  width: 50%;
-
-  float: left;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-.sc_contact_form.sc_contact_form_standard
-  .sc_contact_form_field
-  + .sc_contact_form_field {
+#header1 {
+  background: linear-gradient(#2a3240, #0c0e12, #55637f);
+  color: white;
+  height: 250px;
+  padding-top: 45px;
   padding-left: 20px;
-}
-
-.sc_contact_form .sc_contact_form_item.label_top label {
-  display: block;
-  margin-bottom: 0.4em;
-}
-.sc_contact_form .sc_contact_form_item.label_bottom label {
-  display: block;
-  margin-top: 0.4em;
-}
-.sc_contact_form .sc_contact_form_item.label_left {
-  overflow: hidden;
-}
-.sc_contact_form .sc_contact_form_item.label_left label {
-  display: block;
-  float: left;
-  width: 25%;
-  padding: 0.25em 1.5em 0.25em 0;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-.sc_contact_form .sc_contact_form_item.label_left input,
-.sc_contact_form .sc_contact_form_item.label_left textarea {
-  display: block;
-  float: left;
-  width: 75%;
-}
-.sc_contact_form .sc_contact_form_item.label_left input[type="radio"],
-.sc_contact_form .sc_contact_form_item.label_left input[type="checkbox"] {
-  width: auto;
-  margin-top: 0.5em;
-  display: inline-block;
-}
-
-.sc_contact_form .sc_contact_form_field input,
-.sc_contact_form .sc_contact_form_message textarea {
-  width: 100%;
-  padding: 0.9em 1em;
-  background-color: transparent;
-  border: 2px solid #474747;
-  color: #fff;
-}
-.sc_contact_form .sc_contact_form_message textarea {
-  min-height: 10.7em;
-}
-
-.sc_contact_form .sc_contact_form_button {
-  text-align: center;
   margin: 0;
-  height: 44px;
+  padding-bottom: 0;
 }
-.sc_contact_form .sc_contact_form_button button {
-  font-size: 1.0714em;
-  font-weight: 400;
-  height: 3em;
-  border-bottom: 2px solid #bb2606;
-  background: #ff7300; /* Old browsers */
-  background: -moz-linear-gradient(top, #ff7300 0%, #ea3108 100%); /* FF3.6+ */
-  background: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    color-stop(0%, #ff7300),
-    color-stop(100%, #ea3108)
-  ); /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(
-    top,
-    #ff7300 0%,
-    #ea3108 100%
-  ); /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(
-    top,
-    #ff7300 0%,
-    #ea3108 100%
-  ); /* Opera 11.10+ */
-  background: -ms-linear-gradient(top, #ff7300 0%, #ea3108 100%); /* IE10+ */
-  background: linear-gradient(to bottom, #ff7300 0%, #ea3108 100%); /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff7300', endColorstr='#ea3108',GradientType=0 ); /* IE6-9 */
-  color: #ffffff;
+.site_logo {
+  min-inline-size: 100%;
+}
+.navbar-brand {
+  padding-left: 30px;
 }
 
-button,
-input,
-optgroup,
-select,
-textarea {
-  font-family: inherit;
-  font-size: 100%; /* Corrects font size not being inherited in all browsers */
-  line-height: 100%;
-  margin: 0; /* Addresses margins set differently in IE6/7, F3/4, S5, Chrome */
-  vertical-align: baseline; /* Improves appearance and consistency in all browsers */
+.nav-item {
+  font-size: 20px;
+  padding: 0px;
 }
-button,
-input {
-  line-height: normal; /* Addresses FF3/4 setting line-height using !important in the UA stylesheet */
-}
-button {
-  overflow: visible;
-}
-button,
-input[type="button"],
-input[type="reset"],
-input[type="submit"] {
-  -webkit-appearance: button;
-  cursor: pointer;
-}
-button[disabled],
-html input[disabled] {
-  cursor: default;
-}
-button::-moz-focus-inner,
-input::-moz-focus-inner {
-  border: 0;
-  padding: 0;
-}
-textarea,
-input[type="text"],
-input[type="number"],
-input[type="email"],
-input[type="password"],
-input[type="search"],
-input[type="checkbox"],
-input[type="radio"] {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; /* Addresses box sizing set to content-box in IE8/9 */
-}
-input[type="checkbox"],
-input[type="radio"] {
-  padding: 0; /* Addresses excess padding in IE8/9 */
-}
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
-  height: auto;
-}
-input[type="search"] {
-  -webkit-appearance: none; /* Addresses appearance set to searchfield in S5, Chrome */
-  -webkit-appearance: textfield;
-}
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none; /* Corrects inner padding displayed oddly in S5, Chrome on OSX */
-}
-button::-moz-focus-inner,
-input::-moz-focus-inner {
-  /* Corrects inner padding and border displayed oddly in FF3/4 www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/ */
-  border: 0;
-  padding: 0;
-}
-input[type="text"],
-input[type="number"],
-input[type="email"],
-input[type="password"],
-input[type="search"],
-textarea {
-  -webkit-appearance: none;
-  outline: none;
-  resize: none;
-  padding: 0.45em 0.5em;
-  line-height: 1.3em;
-}
-button::-moz-focus-inner {
-  border: 0;
-}
-button:focus,
-input[type="text"]:focus,
-input[type="email"]:focus,
-input[type="password"]:focus,
-input[type="search"]:focus,
-textarea:focus {
-  outline: none;
-}
-textarea {
-  overflow: auto; /* Removes default vertical scrollbar in IE6/7/8/9 */
-  vertical-align: top; /* Improves readability and alignment in all browsers */
-  padding: 0.45em 0.5em;
-  min-height: 5em;
-}
-label.required:after {
-  content: "*";
-  display: inline-block;
-  vertical-align: text-top;
-  font-size: 80%;
-  color: #da6f5b;
-}
-
-/* Footer widgets */
-.footer_wrap {
-  padding: 5.4em 0 4.4em;
-}
-.footer_wrap aside {
-  margin-bottom: 1.5em;
-}
-
-/* Contacts */
-.contacts_wrap {
-  padding: 6em 2.25em 6.9em 2.25em;
+/* Add a gray background color and some padding to the footer */
+footer {
+  margin: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: linear-gradient(#2a3240, #0c0e12, #55637f);
+  color: white;
   text-align: center;
-  background-color: #1b1b1b;
+  padding: 25px;
 }
-.contacts_wrap .logo {
-  text-align: center;
-  margin-bottom: 2em;
+
+.carousel-inner img {
+  width: 100%; /* Set width to 100% */
+  min-height: 200px;
 }
-.contacts_wrap .logo .logo_text {
-  font-size: 2em;
+
+/* Hide the carousel text when the screen is less than 600 pixels wide */
+@media (max-width: 600px) {
+  .carousel-caption {
+    display: none;
+  }
 }
-.contacts_wrap .logo img {
-  vertical-align: middle;
-  display: inline-block;
-}
-.contacts_wrap .contacts_address {
-  margin-bottom: 1em;
-}
-.contacts_wrap .contacts_address .address_left {
-  width: 49%;
-  text-align: right;
-  float: left;
-}
-.contacts_wrap .contacts_address .address_right {
-  width: 48%;
-  text-align: left;
-  float: right;
-}
-.sc_contact_form sc_contact_form_standard {
-  align-content: center;
-  align-items: center;
-  align-self: center;
-}
-.glass {
-  /* background styles */
+
+header {
   position: relative;
-  display: inline-block;
-  padding: 15px 25px;
-  background-color: rgb(201, 90, 26); /*for compatibility with older browsers*/
-  background-image: linear-gradient(rgb(148, 70, 5), rgb(230, 122, 60));
-
-  /* text styles */
-  text-decoration: none;
-  color: #fff;
-  font-size: 25px;
-  font-family: sans-serif;
-  font-weight: 100;
-  border-radius: 3px;
-  box-shadow: 0px 1px 4px -2px #333;
-  text-shadow: 0px -1px #333;
+  background-color: black;
+  height: 75vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+  padding-bottom: 0;
 }
 
-.glass:after {
-  content: "";
+header video {
+  padding: 0;
   position: absolute;
-  top: 2px;
-  left: 2px;
-  width: calc(100% - 4px);
-  height: 50%;
-  background: linear-gradient(
-    rgba(255, 255, 255, 0.8),
-    rgba(255, 255, 255, 0.2)
-  );
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+header .container {
+  position: relative;
+  z-index: 2;
+  padding-bottom: 0;
+}
+
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+@media (pointer: coarse) and (hover: none) {
+  header {
+    background: url("http://spotlightproductions.net/wp-content/uploads/2016/02/Spotlight-Sound.png")
+      black no-repeat center center scroll;
+  }
+  header video {
+    display: none;
+  }
 }
