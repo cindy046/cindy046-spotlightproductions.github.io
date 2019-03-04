@@ -1,5 +1,6 @@
 .section1 {
-  height: 100px;
+  height: 200px;
+  width: 100%;
 }
 .col-sm-2 {
   max-height: 100%;
@@ -10,11 +11,22 @@
 }
 .bg {
   background-image: url("https://sftextures.com/texture/5145/1/5153/gradient-grey-display-background-many-nine-lights-stage-floor-six-spotlight-wall-modern-soft-web-image-512x288.png");
-  height: 100vh;
-  background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
-  z-index: -2;
+  background-position: center;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  height: 100vh;
+  z-index: 1;
+}
+.col-sm-4 {
+  height: 100%;
+}
+
+header {
+  height: 100%;
+  margin-bottom: 10px;
 }
 
 #header1 {
@@ -64,11 +76,11 @@ footer {
 header {
   position: relative;
   background-color: black;
-  height: 75vh;
+  height: 100vh;
   min-height: 25rem;
   width: 100%;
   overflow: hidden;
-  padding-bottom: 0;
+  padding-bottom: 10;
 }
 
 header video {
@@ -113,4 +125,108 @@ header .overlay {
   header video {
     display: none;
   }
+}
+
+.wordslide1,
+.wordslide2,
+.wordslide3,
+.wordslide4,
+.wordslide5 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding: 10px;
+}
+
+.wordslide1 h3 {
+  font-size: 30px;
+  padding: 10px;
+  font-kerning: auto;
+  animation: wordslide1 7s ease-out;
+}
+.wordslide2 h3 {
+  font-size: 30px;
+  padding: 10px;
+  animation: wordslide2 6s ease-out;
+}
+.wordslide3 h3 {
+  font-size: 30px;
+  padding: 10px;
+  animation: wordslide3 5s ease-out;
+}
+.wordslide4 h3 {
+  font-size: 30px;
+  padding: 10px;
+  animation: wordslide4 4s ease-out;
+}
+.wordslide5 h3 {
+  font-size: 30px;
+  padding: 10px;
+  animation: wordslide5 2s ease-out;
+}
+
+@keyframes wordslide1 {
+  0% {
+    transform: translateX(200%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+@keyframes wordslide2 {
+  0% {
+    transform: translateX(200%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+@keyframes wordslide3 {
+  0% {
+    transform: translateX(200%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+@keyframes wordslide4 {
+  0% {
+    transform: translateX(200%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+@keyframes wordslide5 {
+  0% {
+    transform: translateX(200%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+#rotate3D {
+  position: relative;
+}
+
+body {
+  background: linear-gradient(273deg, #2a3240, #55637f, #c8cacd);
+  background-size: 600% 600%;
+  
+  -webkit-animation: bg 20s ease infinite;
+  animation: bg 20s ease infinite;}
+  
+  @-webkit-keyframes bg {
+      0%{background-position:0% 52%}
+      50%{background-position:100% 49%}
+      100%{background-position:0% 52%}
+  }
+  @keyframes bg { 
+      0%{background-position:0% 52%}
+      50%{background-position:100% 49%}
+      100%{background-position:0% 52%}
+  }
+  
+
 }
