@@ -435,8 +435,9 @@ body {
 
 .testim .cont div h2 {
   color: #ea830e;
-  font-size: 1em;
+  font-size: 1.5em;
   margin: 15px 0;
+  text-shadow: 2px 2px rgb(20, 20, 20);
 }
 
 .testim .cont div p {
