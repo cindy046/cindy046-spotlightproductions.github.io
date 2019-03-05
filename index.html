@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
+
    </head>
 
   <body >
@@ -132,6 +134,7 @@
         </div>
       </div>
    
+     
     <!-- section -->
     <section class="section1"></section>
     
@@ -181,10 +184,28 @@
           <div class="row">
           
         </div>
-      
-     
-    <section class="section1">
-      </section>
+      	<!-- button calls href number or system asks for preferred app -->
+<div style="padding: 20px;">
+    <a href="tel:+1-408-555-5555">
+        <!-- large call button is changed from bootstrap color using style/css -->
+     <button type="button" class="btn btn-primary btn-lg btn3d"  style="height: 110px; background: linear-gradient(#2a3240, #0c0e12, #55637f);">
+         <!-- added glyphicon phone icon  -->
+     <span class="glyphicon glyphicon-earphone"></span> 
+         <!--add wording on button here   -->
+       CALL SPOTLIGHT STUDIOS</button></a>
+  
+   <!-- SMS TEXT button types text /texts href number or system asks for preferred app -->
+ <span class="" >
+    <a  href="sms:1-408-555-1212" >
+        <!-- large call button is green 'success' color  -->
+     <button type="button" class="btn btn-primary btn-lg btn3d" style="height: 100px; background: linear-gradient(#2a3240, #0c0e12, #55637f);">
+         <!-- added glyphicon phone icon  -->
+     <span class="glyphicon glyphicon-phone"></span> 
+         <!--add wording on button here   -->
+       <span class="ityped"></span>
+       <span class="glyphicon glyphicon-hand-up"></span> </button></a>
+  </div>    </div> </div> 
+   
     <div class="container text-center" style="width:inherit;">
       <h3><b>OUR PARTNERS</b></h3>
       <hr>
@@ -301,8 +322,15 @@
     if (ny>=360){ny=0}
     }
     }
+    
     //-->
+    
     </script>
- 
+  <!-- this js script function causes typing on button   -->
+  <script src="https://unpkg.com/ityped@0.0.10"></script>
+  <script>
+ window.ityped.init(document.querySelector('.ityped'),{
+  strings: ['BOOK YOUR STUDIO TIME NOW!','SEND US A TEXT MESSAGE!', 'CLICK HERE!'], loop: true })
+ </script>
   </body>
 </html>

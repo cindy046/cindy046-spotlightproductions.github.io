@@ -1,3 +1,8 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
 .section1 {
   height: 200px;
   width: 100%;
@@ -136,7 +141,6 @@ header .overlay {
   width: 100%;
   height: 100%;
   text-align: center;
-  padding: 8px;
 }
 
 .wordslide1 h3 {
@@ -148,21 +152,25 @@ header .overlay {
 .wordslide2 h3 {
   font-size: 25px;
   padding: 8px;
+  font-kerning: auto;
   animation: wordslide2 6s ease-out;
 }
 .wordslide3 h3 {
   font-size: 25px;
   padding: 8px;
+  font-kerning: auto;
   animation: wordslide3 5s ease-out;
 }
 .wordslide4 h3 {
   font-size: 25px;
   padding: 8px;
+  font-kerning: auto;
   animation: wordslide4 4s ease-out;
 }
 .wordslide5 h3 {
   font-size: 25px;
   padding: 7px;
+  font-kerning: auto;
   animation: wordslide5 2s ease-out;
 }
 
